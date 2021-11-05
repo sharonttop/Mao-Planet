@@ -32,9 +32,8 @@ function Avatar(props) {
 
   //-------抓客人資料(測試後端)
   useEffect(() => {
-    // if (!prevPathName === props.location.pathname)
-     avatarReload()
-  }, [])
+    if (prevPathName !== props.location.pathname) avatarReload()
+  }, [props.location.pathname])
   //[props.location.pathname]
 
   const style = {

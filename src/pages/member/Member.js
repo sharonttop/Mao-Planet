@@ -6,7 +6,7 @@ import UserOrder from './admin/user/UserOrder'
 import InfoEdit from './admin/user/InfoEdit/InfoEdit'
 import AddressEdit from './admin/user/AddressEdit'
 import PasswordChange from './admin/user/PasswordChange/PasswordChange'
-import PetId from './admin/user/PetId'
+import PetId from './admin/user/petId/PetId'
 import './Member.scss'
 
 function Member(props) {

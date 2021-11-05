@@ -1,14 +1,23 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 import { AUTH_TOKEN, IMG_PATH } from '../config'
 import { withRouter } from 'react-router-dom'
 
+function usePrevious(value) {
+  const ref = useRef()
+  useEffect(() => {
+    ref.current = value
+  })
+  return ref.current
+}
+
 function Avatar(props) {
   const [avatar, setAvatar] = useState('')
 
+  const prevPathName = usePrevious(props.location.pathname)
   const token = localStorage.getItem('token')
-  //-------抓客人資料(測試後端)
-  useEffect(() => {
+
+  const avatarReload = () => {
     ;(async () => {
       const r = await fetch(AUTH_TOKEN, {
         method: 'GET',
@@ -19,7 +28,15 @@ function Avatar(props) {
       const obj = await r.json()
       setAvatar(obj.avatar)
     })()
+  }
+
+  //-------抓客人資料(測試後端)
+  useEffect(() => {
+    // if (!prevPathName === props.location.pathname)
+     avatarReload()
   }, [])
+  //[props.location.pathname]
+
   const style = {
     width: '45px',
     height: '45px',

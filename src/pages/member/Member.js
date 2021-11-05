@@ -8,13 +8,23 @@ import AddressEdit from './admin/user/AddressEdit'
 import PasswordChange from './admin/user/PasswordChange/PasswordChange'
 import PetId from './admin/user/petId/PetId'
 import './Member.scss'
+import MemberBackground from '../../images/memberBackground3.svg'
+import MemberCard from './MemberCard'
+import { FaPaw } from 'react-icons/fa'
 
 function Member(props) {
   // 預設出現的文字元件
   const Default = () => (
     <>
-      會員首頁
-      <br />
+      <div className="MemberBackground">
+        <p>
+          <FaPaw />
+          為您推薦Recommend
+        </p>
+        <img src={MemberBackground} alt="" />
+      </div>
+      <MemberCard />
+
       <button
         type="button"
         onClick={() => {
@@ -28,31 +38,7 @@ function Member(props) {
       </button>
     </>
   )
-
-  // const { auth, setAuth } = props
-
-  // if (!auth) return <Redirect to="/login" />
-
-  //驗證有無token
-  // const token = localStorage.getItem('token')
-  // if (token) {
-  //   setAuth(true)
-  // }
-
-  //   if (!auth)
-  //     return (
-  //       <Redirect>
-  //         你沒登入，請連到<Link to="/login">登入頁面</Link>
-  //       </Redirect>
-  //     )
   console.log(props)
-
-  //location:內的search: "?order_id=3"可以抓到
-  // const searchParams = new URLSearchParams(
-  //   props.location.search
-  // )
-  // const order_id = searchParams.get('order_id')
-  // console.log(order_id)
 
   // 網址參數對應頁面區塊元件
   // 屬性 = 網址上的task參數 props.match.params.task
@@ -90,7 +76,7 @@ function Member(props) {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-sm-3">
+          <div className="col-sm-4">
             <div className="card memberCard">
               <div className="memberBanner">
                 <h2>會員訊息</h2>
@@ -118,24 +104,8 @@ function Member(props) {
                 </ul>
               </div>
             </div>
-            <ul>
-              <h4>毛孩認養</h4>
-              <li>
-                <Link to="/admin/user/#/">我的毛孩</Link>
-              </li>
-              <li>
-                <Link to="/admin/user/#/">飼主回信</Link>
-              </li>
-              <h4>毛孩旅館</h4>
-              <li>
-                <Link to="/admin/user/#/">旅館預約</Link>
-              </li>
-              <li>
-                <Link to="/admin/user/#/">預約更改及取消</Link>
-              </li>
-            </ul>
           </div>
-          <div className="col-sm-9">
+          <div className="col-sm-8">
             {/* <h1>會員管理區</h1> */}
             <Component />
           </div>

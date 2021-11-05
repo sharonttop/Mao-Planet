@@ -221,7 +221,12 @@ function InfoEdit(props) {
                   required
                 />
                 {editFieldsErrors.name !== '' && (
-                  <div className="error">{editFieldsErrors.name}</div>
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
+                    {editFieldsErrors.name}
+                  </div>
                 )}
               </div>
               <div className="infoEditForm-group">
@@ -236,7 +241,12 @@ function InfoEdit(props) {
                   required
                 />
                 {editFieldsErrors.nickname !== '' && (
-                  <div className="error">{editFieldsErrors.nickname}</div>
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
+                    {editFieldsErrors.nickname}
+                  </div>
                 )}
               </div>
               <div className="infoEditForm-group">
@@ -252,7 +262,12 @@ function InfoEdit(props) {
                   readOnly
                 />
                 {editFieldsErrors.email !== '' && (
-                  <div className="error">{editFieldsErrors.email}</div>
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
+                    {editFieldsErrors.email}
+                  </div>
                 )}
               </div>
 

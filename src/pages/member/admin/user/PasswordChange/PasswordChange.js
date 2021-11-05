@@ -168,7 +168,12 @@ function PasswordChange(props) {
                   placeholder="oldPassword"
                 />
                 {editFieldsErrors.oldpassword !== '' && (
-                  <div className="error">{editFieldsErrors.oldpassword}</div>
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
+                    {editFieldsErrors.oldpassword}
+                  </div>
                 )}
               </div>
               <div className="passwordChangeForm-group">
@@ -184,7 +189,12 @@ function PasswordChange(props) {
                   placeholder="newPassword"
                 />
                 {editFieldsErrors.password !== '' && (
-                  <div className="error">{editFieldsErrors.password}</div>
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
+                    {editFieldsErrors.password}
+                  </div>
                 )}
               </div>
               <div className="passwordChangeForm-group">
@@ -200,7 +210,10 @@ function PasswordChange(props) {
                   placeholder="confirmPassword"
                 />
                 {editFieldsErrors.confirmPassword !== '' && (
-                  <div className="error">
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
                     {editFieldsErrors.confirmPassword}
                   </div>
                 )}

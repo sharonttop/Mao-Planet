@@ -160,7 +160,12 @@ function SignUp(props) {
                   required
                 />
                 {fieldErrors.name !== '' && (
-                  <div className="error">{fieldErrors.name}</div>
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
+                    {fieldErrors.name}
+                  </div>
                 )}
               </div>
               <div className="signUpForm-group">
@@ -175,7 +180,12 @@ function SignUp(props) {
                   required
                 />
                 {fieldErrors.nickname !== '' && (
-                  <div className="error">{fieldErrors.nickname}</div>
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
+                    {fieldErrors.nickname}
+                  </div>
                 )}
               </div>
               <div className="signUpForm-group">
@@ -190,7 +200,12 @@ function SignUp(props) {
                   required
                 />
                 {fieldErrors.email !== '' && (
-                  <div className="error">{fieldErrors.email}</div>
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
+                    {fieldErrors.email}
+                  </div>
                 )}
               </div>
               <div className="signUpForm-group">
@@ -206,7 +221,12 @@ function SignUp(props) {
                   placeholder="Password"
                 />
                 {fieldErrors.password !== '' && (
-                  <div className="error">{fieldErrors.password}</div>
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
+                    {fieldErrors.password}
+                  </div>
                 )}
               </div>
               <div className="signUpForm-group">
@@ -222,7 +242,12 @@ function SignUp(props) {
                   placeholder="confirmPassword"
                 />
                 {fieldErrors.confirmPassword !== '' && (
-                  <div className="error">{fieldErrors.confirmPassword}</div>
+                  <div
+                    className="error"
+                    style={{ fontSize: 0.9, color: 'red' }}
+                  >
+                    {fieldErrors.confirmPassword}
+                  </div>
                 )}
               </div>
               <div className="signUpForm-group">

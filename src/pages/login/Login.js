@@ -198,7 +198,9 @@ function Login(props) {
                 required
               />
               {fieldErrors.email !== '' && (
-                <div className="error">{fieldErrors.email}</div>
+                <div className="error" style={{ fontSize: 0.9, color: 'red' }}>
+                  {fieldErrors.email}
+                </div>
               )}
             </div>
             <div className="loginForm-group">
@@ -216,7 +218,9 @@ function Login(props) {
                 required
               />
               {fieldErrors.password !== '' && (
-                <div className="error">{fieldErrors.password}</div>
+                <div className="error" style={{ fontSize: 0.9, color: 'red' }}>
+                  {fieldErrors.password}
+                </div>
               )}
             </div>
             <div className="loginSignUpLink">

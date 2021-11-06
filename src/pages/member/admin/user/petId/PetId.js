@@ -6,8 +6,8 @@ import conf, {
 } from '../../../../../config'
 
 import axios from 'axios'
-import petIdRemoveMark from '../../../../../images/petIdRemoveMark80x80.svg'
-import petIdAddMark from '../../../../../images/petIdAddMark80x80.svg'
+import petIdRemoveMark from '../../../../../images/PetID/petIdRemoveMark80x80.svg'
+import petIdAddMark from '../../../../../images/PetID/petIdAddMark80x80.svg'
 
 import './PetId.scss'
 

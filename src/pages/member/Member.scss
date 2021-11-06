@@ -25,14 +25,18 @@
     margin-bottom: 1rem;
 
 }
-.memberBanner>h2{
-    font-size: 1.5rem;
+.memberBanner>p{
+    font-size: 1.2rem;
     color: #ffffff;
     padding-top: 1rem;
-    text-align: center;
+    // text-align: center;
 }
-// .memberCard>ul>li {
-//     padding-right: 1rem;
+.memberCardwrap>ul>li>a {
+    text-decoration:none;
+    color:#222222;
+}
+// .memberCardwrap>ul>li {
+//     border-bottom:solid 1px #222222;
 // }
 
 .MemberBackground>img{
@@ -43,7 +47,7 @@
 .MemberBackground>p{
     // max-height: 80%;
     color: hsl(210, 2%, 58%);
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 230px;
     margin-top: 20px;
     position: absolute;

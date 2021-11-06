@@ -38,10 +38,12 @@ export const pathnameList = [
   '/admin/user/addressedit',
   '/admin/user/petid',
   '/adoptlist',
+  '/adoptlist/adoptpage',
   '/productlist',
   '/productlist/dog',
   '/productlist/cat',
   '/hotellist',
+  '/hotellist/hotelpage',
   '/bloglist',
 ]
 
@@ -56,10 +58,12 @@ export const pathnameTextList = [
   '/會員專區/收貨地址',
   '/會員專區/毛孩ID',
   '/毛孩找家',
+  '/毛孩找家/毛孩簡介',
   '/毛孩雜貨',
   '/毛孩雜貨/狗狗館',
   '/毛孩雜貨/貓貓館',
   '/毛孩假期',
+  '/毛孩假期/旅宿簡介',
   '/鏟屎官大補帖',
 ]
 

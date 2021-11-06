@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import ReactSlick from 'react-slick'
-import MemberNewArrival from '../../images/MemberNewArrival.png'
-import MemberNeedHome from '../../images/MemberNeedHome.png'
-import MemberYouShouldKnow from '../../images/MemberYouShouldKnow.png'
-// import MemberBackground from '../../images/memberBackground.svg'
+import MemberNewArrival from '../../images/Member/MemberNewArrival.png'
+import MemberNeedHome from '../../images/Member/MemberNeedHome.png'
+import MemberYouShouldKnow from '../../images/Member/MemberYouShouldKnow.png'
 
 export default class MultipleItems extends Component {
   render() {

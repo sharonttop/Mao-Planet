@@ -8,7 +8,7 @@ import AddressEdit from './admin/user/AddressEdit'
 import PasswordChange from './admin/user/PasswordChange/PasswordChange'
 import PetId from './admin/user/petId/PetId'
 import './Member.scss'
-import MemberBackground from '../../images/memberBackground3.svg'
+import MemberBackground from '../../images/Member/memberBackground3.svg'
 import MemberCard from './MemberCard'
 import { FaPaw } from 'react-icons/fa'
 
@@ -79,9 +79,9 @@ function Member(props) {
           <div className="col-sm-4">
             <div className="card memberCard">
               <div className="memberBanner">
-                <h2>會員訊息</h2>
+                <p>會員訊息</p>
               </div>
-              <div className="wrap">
+              <div className="memberCardwrap">
                 <ul>
                   <li>
                     <Link to="/admin/user/infoedit">個人資料</Link>
